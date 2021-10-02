@@ -13,6 +13,13 @@
       "category": "food",
       "description": "Join us as we tend to the community edible plants.",
       "fontFamily": "Bebes Neue"
+    },
+    {
+      "id": 2,
+      "title": "Zebius",
+      "category": "food",
+      "description": "Join us as we tend to the community edible plants.",
+      "fontFamily": "Source Code Pro"
     }
   ]
 }
