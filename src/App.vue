@@ -18,19 +18,6 @@
   text-align: center;
   color: #2c3e50;
 }
-
-/*#nav {*/
-/*  padding: 30px;*/
-/*}*/
-
-/*#nav a {*/
-/*  font-weight: bold;*/
-/*  color: #2c3e50;*/
-/*}*/
-
-/*#nav a.router-link-exact-active {*/
-/*  color: #42b983;*/
-/*}*/
 </style>
 
 <script>
@@ -39,11 +26,21 @@ import MainTitle from '@/components/MainTitle.vue';
 import GameSelection from '@/components/GameSelection.vue';
 import TextBox from '@/components/TextBox.vue';
 import GameFontCard from '@/components/GameFontCard.vue';
+// import GameFontServices from './services/GameFontServices';
 
 export default {
   inject: ['GStore'],
   components: {
     GameFontCard, TextBox, GameSelection, MainTitle, NavBar,
   },
+  // created() {
+  //   GameFontServices.getGames(100)
+  //     .then((response) => {
+  //       this.GStore.selectedGames.push(...response.data);
+  //     })
+  //     .catch(() => {
+  //       console.log('error');
+  //     });
+  // },
 };
 </script>

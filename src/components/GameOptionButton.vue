@@ -28,7 +28,8 @@ export default {
         this.GStore.selectedGames.push(this.gameData);
       } else {
         const index = this.GStore.selectedGames.indexOf(this.gameData);
-        this.GStore.selectedGames.splice(index);
+        this.GStore.selectedGames.splice(index, 1);
+        // }
       }
     },
   },
@@ -49,11 +50,11 @@ export default {
 }
 
 .selected {
-  background-color: slategray;
+  background-color: white;
 }
 
 .not-selected {
-  background-color: white;
+  background-color: slategray;
 }
 
 </style>
