@@ -4,13 +4,15 @@
       "id": 0,
       "title": "Pacman",
       "category": "animal welfare",
-      "description": "Find your new feline friend at this event."
+      "description": "Find your new feline friend at this event.",
+      "fontFamily": "Droid Sans"
     },
     {
-      "id": 456,
+      "id": 1,
       "title": "Street Fighter",
       "category": "food",
-      "description": "Join us as we tend to the community edible plants."
+      "description": "Join us as we tend to the community edible plants.",
+      "fontFamily": "Droid Serif"
     }
   ]
 }

@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import WebFont from 'webfontloader';
+
 export default {
   name: 'GameFontCard',
   inject: ['GStore'],
@@ -14,17 +16,23 @@ export default {
       required: true,
     },
   },
+  created() {
+    WebFont.load({
+      google: {
+        families: [this.gameData.fontFamily],
+      },
+      // active: this.setFontLoaded,
+    });
+  },
   computed: {
     gameFont() {
-      return "@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap')";
+      return `font-family: ${this.gameData.fontFamily}`;
     },
   },
 };
 </script>
 
 <style scoped>
-  /*font-family: 'Merienda';*/
-  /*@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');*/
   .game-card {
     border: solid;
     border-width: 1px;
